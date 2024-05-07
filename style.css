@@ -1,0 +1,123 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+    font-family: 'Kalam', cursive;
+}
+body {
+    background: url("artworks-000128750003-9az8ai-t500x500.jpg");
+    
+}
+.container {
+    font-size: 16px;
+    background-color:blanchedalmond;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.6em;
+    box-sizing: 1.2em 2.4em rbg(11,85,0,0.25);
+
+}
+#options-container {
+    text-align: center;
+}
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+}
+#options-container button {
+    padding: 0.6em 1.2em;
+    border:  3px solid rgb(82, 3, 3);
+    background-color: rgb(255, 131, 152) ;
+    color: #ffffff;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+#option-container button:disabled {
+    border: rgb(134, 98, 98);
+    color: pink;
+    background-color: #efefef;
+}
+#option-container button:active {
+    border: rgb(247, 89, 186);
+    color: rgb(253, 66, 138);
+    background-color: #efefef;
+
+} 
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+      
+}
+#letter-container button {
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 0.3em;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.new-game-popup {
+    background-color: rgb(253, 160, 253);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em 0 1.2em 0;
+}
+canvas {
+    display: block;
+    margin: auto;
+    border: 10px solid #b60867;
+    border-radius: 10px;
+
+}
+.hide {
+    display: none;
+}
+#result-text h2 {
+    font-size: 1.8em;
+    text-align: center;
+
+}
+#result-text p {
+    font-size: 1.25em;
+    margin: 1em 0 2em;
+
+}
+#result-text span {
+    font-weight: 600;
+}
+#new-game-button {
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background-color: #8c52ff;
+    border: 3px solid #000000;
+    border-radius: 0.2em;
+    cursor: pointer;
+    color: #fff;
+}
+.win-msg {
+    color: #39d78d;
+}
+.lose-msg {
+    color: #fe5152;
+}
+
